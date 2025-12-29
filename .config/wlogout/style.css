@@ -1,0 +1,90 @@
+
+
+
+window {
+    /*  font-size: 24pt; */
+    /* color: @foreground;  */
+    background-color: rgba(30, 30, 46, 0.8);
+    /* border-top: none;  */
+
+
+}
+
+button {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20%;
+
+
+    border: none;
+    padding: 0;
+
+
+}
+
+button:focus {
+    background-size: 50%;
+	border: 0px;
+	/* outline-style: none; */
+
+}
+
+button:hover {
+    background-color: transparent; 
+    color: @color13;
+    background-size: 50%;
+    margin: 30px;
+    /* border-radius: 80px; */
+    /* outline-style: none; */
+	
+}
+
+/* Adjust the size of the icon or content inside the button */
+button span {
+    font-size: 1em; /* Increase the font size */
+}
+
+
+
+#logout {
+    background-image: image(url("./icons/logout.png"));
+}
+#lock:hover {
+    background-image: image(url("./icons/lock-hover.png"));
+}
+#lock {
+    background-image: image(url("./icons/lock.png"));
+}
+#logout:hover {
+    background-image: image(url("./icons/logout-hover.png"));
+}
+
+#suspend {
+    background-image: image(url("./icons/sleep.png"));
+}
+#suspend:hover {
+    background-image: image(url("./icons/sleep-hover.png"));
+}
+
+#shutdown {
+    background-image: image(url("./icons/power.png"));
+}
+#shutdown:hover {
+    background-image: image(url("./icons/power-hover.png"));
+}
+
+#reboot {
+    background-image: image(url("./icons/restart.png"));
+    background-size: 20%;
+}
+#reboot:hover {
+    background-image: image(url("./icons/restart-hover.png"));
+    background-size: 50%;
+}
+
+#hibernate {
+    background-image: image(url("./icons/hibernate.png"));
+}
+#hibernate:hover {
+    background-image: image(url("./icons/hibernate-hover.png"));
+}

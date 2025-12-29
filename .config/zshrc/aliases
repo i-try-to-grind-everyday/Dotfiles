@@ -1,0 +1,51 @@
+# -----------------------------------------------------
+# ALIASES
+# -----------------------------------------------------
+
+
+# -----------------------------------------------------
+# General
+# -----------------------------------------------------
+alias c='clear'
+alias cat='bat'
+alias fl='fastfetch'
+alias ff='fastfetch --logo None'
+alias shutdown='systemctl poweroff'
+alias v='$EDITOR'
+alias ttc='tty-clock -s -c -C 4'
+
+
+# -----------------------------------------------------
+# Directorys
+# -----------------------------------------------------
+
+alias config='.config'
+alias home='~'
+
+
+# -----------------------------------------------------
+# Git
+# -----------------------------------------------------
+alias status='git status'
+alias push='git push'
+alias pull='git pull'
+alias commit='git commit -m'
+
+
+# -----------------------------------------------------
+# Python
+# -----------------------------------------------------
+alias activate='source .venv/bin/activate'
+alias run='python -u main.py'
+
+# -----------------------------------------------------
+# System
+# -----------------------------------------------------
+alias update-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
+alias update='sudo pacman -Syyu'
+alias remove='sudo pacman -Rns'
+alias install='sudo pacman -S'
+alias clean='sudo pacman -Rns $(pacman -Qtdq)'
+alias search='pacman -Ss'
+alias details='pacman -Si' #it search for packange into in arch repostory not installed one 
+

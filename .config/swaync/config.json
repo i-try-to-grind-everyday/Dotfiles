@@ -1,0 +1,82 @@
+{
+  "$schema": "/etc/xdg/swaync/configSchema.json",
+
+  "ignore-gtk-theme": true,
+
+  "positionX": "right",
+  "positionY": "top",
+
+  "layer": "overlay",
+  "control-center-layer": "top",
+  "layer-shell": true,
+  "layer-shell-cover-screen": true,
+
+  "cssPriority": "user",
+
+  "control-center-width": 400,
+  "control-center-height": 600,
+
+  "control-center-margin-top": 0,
+  "control-center-margin-bottom": 450,
+  "control-center-margin-right": 0,
+  "control-center-margin-left": 0,
+
+  "notification-window-width": 370,
+
+  "timeout": 10,
+  "timeout-low": 5,
+  "timeout-critical": 5,
+
+  "fit-to-screen": true,
+  "relative-timestamps": true,
+
+  "notification-grouping": true,
+  "notification-2fa-action": true,
+  "notification-inline-replies": false,
+
+  "image-visibility": "when-available",
+  "notification-body-image-height": 100,
+  "notification-body-image-width": 200,
+
+  "transition-time": 200,
+
+  "hide-on-clear": true,
+  "hide-on-action": true,
+
+  "keyboard-shortcuts": true,
+
+  "text-empty": "No Notifications",
+
+  "script-fail-notify": true,
+  "scripts": {
+  "notification-sound": {
+    "exec": "~/.Scripts/Notification/notification_sound.sh",
+    "run-on": "notify"
+  }
+  },
+
+  "widgets": [
+    "dnd",
+    "inhibitors",
+    "title",
+    "notifications"
+  ],
+
+  "widget-config": {
+    "notifications": {
+      "vexpand": true
+    },
+    "inhibitors": {
+      "text": "Inhibitors",
+      "clear-all-button": true
+    },
+    "title": {
+      "text": "Notifications",
+      "clear-all-button": true
+    },
+    "dnd": {
+      "text": "Do Not Disturb"
+    }
+  }
+}
+
