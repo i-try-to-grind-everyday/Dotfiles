@@ -1,4 +1,5 @@
 # -----------------------------------------------------
 # Theme
 # -----------------------------------------------------
-eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/theme4.json)"
+# eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/theme4.json)"
+eval "$(starship init zsh)"
