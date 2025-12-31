@@ -1,5 +1,5 @@
 # -----------------------------------------------------
 # Theme
 # -----------------------------------------------------
-# eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/theme4.json)"
+export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
 eval "$(starship init zsh)"

@@ -167,6 +167,7 @@ binds {
         spawn "rofi" "-show" "drun";
     }
     Mod+N hotkey-overlay-title="Notification Center" { spawn-sh "swaync-client -t -sw"; }
+    Mod+V { spawn-sh "rofi -modi clipboard:~/.config/rofi/Assets/cliphist-rofi-img -show clipboard -show-icons";}
 
     // === Security ===
     Mod+Shift+E { quit; }
