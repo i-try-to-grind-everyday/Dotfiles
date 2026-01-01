@@ -60,6 +60,8 @@ layer-rule {
     place-within-backdrop true
 }
 overview {
+	zoom 0.40
+    	backdrop-color "#777777"
     workspace-shadow {
         off
     }
@@ -68,13 +70,19 @@ spawn-at-startup "swww-daemon"
 spawn-at-startup "wl-paste" "--type" "image" "--watch" "cliphist" "store"
 spawn-at-startup "wl-paste" "--type" "text" "--watch" "cliphist" "store"
 //spawn-at-startup "/home/yousaytoday/Python/Reminder/.venv/bin/python" "/home/yousaytoday/Python/Reminder/main.py"
+spawn-at-startup "~/.Scripts/swww_animation/./swww.sh"
 environment {
   XDG_CURRENT_DESKTOP "niri"
   QT_QPA_PLATFORM "wayland"
+  GTK_IM_MODULE "simple"
   ELECTRON_OZONE_PLATFORM_HINT "auto"
   QT_QPA_PLATFORMTHEME "gtk3"
-  QT_QPA_PLATFORMTHEME_QT6 "gtk3"
+  QT_QPA_PLATFORMTHEME_QT6 "gtk4"
   TERMINAL "kitty"
+}
+cursor {
+    xcursor-theme "cursor"
+    xcursor-size 24
 }
 hotkey-overlay {
     skip-at-startup
@@ -154,6 +162,19 @@ window-rule {
 window-rule {
     geometry-corner-radius 12
     clip-to-geometry true
+}
+// Block out password managers from screencasts.
+window-rule {
+    match app-id=r#"^org\.keepassxc\.KeePassXC$"#
+    match app-id=r#"^org\.gnome\.World\.Secrets$"#
+
+    block-out-from "screencast"
+}
+// Block out mako notifications from screencasts.
+layer-rule {
+    match namespace="^notifications$"
+
+    block-out-from "screencast"
 }
 binds {
     // === System & Overview ===
