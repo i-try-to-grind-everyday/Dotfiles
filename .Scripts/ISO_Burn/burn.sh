@@ -9,7 +9,7 @@ error() {
 
 show_help() {
     cat <<EOF
-Usage: format_iso.sh <disk> <iso>
+Usage: burn <disk> <iso>
 
 Arguments:
   <disk>   Target USB or disk to write the ISO (e.g., /dev/sdb)

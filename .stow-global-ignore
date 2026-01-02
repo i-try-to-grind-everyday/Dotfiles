@@ -1,3 +1,5 @@
 ^Assets$
 /.git
 /README.md
+/.gitignore
+.stow-global-ignore
