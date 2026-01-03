@@ -379,6 +379,7 @@ notificationwindow, blankwindow, blankwindow {
 
 .floating-notifications {
   background: transparent;
+  margin-top: 10px;
 }
 
 .floating-notifications .notification {

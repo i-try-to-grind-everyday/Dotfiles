@@ -3,7 +3,7 @@
 
   "ignore-gtk-theme": true,
 
-  "positionX": "right",
+  "positionX": "center",
   "positionY": "top",
 
   "layer": "overlay",
@@ -16,7 +16,7 @@
   "control-center-width": 400,
   "control-center-height": 600,
 
-  "control-center-margin-top": 0,
+  "control-center-margin-top": 20,
   "control-center-margin-bottom": 450,
   "control-center-margin-right": 0,
   "control-center-margin-left": 0,
